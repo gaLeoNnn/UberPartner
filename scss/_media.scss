@@ -1,0 +1,301 @@
+@media (max-width: 1200px) {
+  .menu {
+    &__item {
+      padding-right: 20px;
+    }
+    &__link {
+      font-size: 13px;
+    }
+  }
+  .promo {
+    &__title {
+      font-size: 50px;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+  }
+  .info {
+    &__text {
+      width: 300px;
+    }
+    &__block {
+      align-items: flex-start;
+    }
+  }
+  .mobile {
+    &__item {
+      width: 300px;
+    }
+  }
+  .footer {
+    &__pic {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .menu {
+    &__item {
+      padding-right: 8px;
+    }
+    &__link {
+      font-size: 10px;
+    }
+  }
+  .promo {
+    &__title {
+      font-size: 40px;
+    }
+    &__subtitle {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 13px;
+    }
+  }
+  .subheader {
+    &__offical {
+      font-size: 10px;
+    }
+    &__phone {
+      font-size: 16px;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+  .info {
+    &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      margin-top: 10px;
+    }
+  }
+  .mobile {
+    &__item {
+      width: 230px;
+    }
+  }
+  .car {
+    padding-bottom: 0;
+    min-height: 0;
+    &__img {
+      img {
+        width: 400px;
+      }
+    }
+    &__title {
+      display: none;
+    }
+  }
+  .footer {
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+
+      & > div {
+        margin: 0 auto;
+      }
+    }
+    &__menu {
+      order: 1;
+      &__main {
+        padding: 0 10px;
+
+        a {
+          font-size: 10px;
+        }
+      }
+      &__sub {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 50px;
+
+        a {
+          line-height: 0px;
+          font-size: 10px;
+        }
+      }
+    }
+    &__social {
+      &__item {
+        width: 25px;
+        height: 25px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &__pic {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 5px;
+    transition: 0.6s all;
+    &__active {
+      left: 0;
+    }
+
+    &__item {
+      margin-top: 10px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    span {
+      display: block;
+      height: 2px;
+      background-color: white;
+      margin-bottom: 3px;
+      transition: 0.5s all;
+    }
+    &__active {
+      span {
+        margin-bottom: -2px;
+        &:nth-child(1) {
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .subheader {
+    &__logo {
+      width: 100%;
+    }
+  }
+  .xs-hidden {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .menu {
+    &__item {
+      margin-top: 25px;
+    }
+    &__link {
+      font-size: 12px;
+    }
+  }
+  .subheader {
+    &__btn {
+      font-size: 9px;
+      margin-top: 3px;
+    }
+    &__phone {
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visiable {
+    display: block;
+  }
+  .mobile {
+    &__item {
+      width: 100%;
+    }
+  }
+  .require {
+    &__list {
+      padding-left: 10px;
+    }
+  }
+  .car__img {
+    img {
+      width: 100%;
+    }
+  }
+  .map {
+    &__link {
+      font-size: 12px;
+    }
+  }
+  .footer {
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+
+      & > div {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+    &__social {
+      margin: 0 auto;
+    }
+    &__menu {
+      max-width: 300px;
+
+      &__main {
+        padding: 0 10px;
+
+        a {
+          font-size: 9px;
+        }
+      }
+      &__sub {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        min-height: 50px;
+
+        a {
+          line-height: 0px;
+          font-size: 10px;
+        }
+      }
+      &__lang {
+        display: none;
+      }
+    }
+
+    &__pic {
+      img {
+        display: none;
+      }
+    }
+  }
+}

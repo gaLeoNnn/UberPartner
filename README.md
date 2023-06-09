@@ -14,7 +14,7 @@ This is a training project for practicing HTML, CSS, SCSS, and BEM-Methodology s
 
 ## Attention
 
-Unfortunately, I haven't used GitHub yet while working on this project. Therefore, you can only see the final version without tracking changes.
+I haven't used GitHub while working on this project. You can only see the final version without tracking changes.
 
 ---
 
